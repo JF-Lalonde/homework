@@ -22,4 +22,4 @@ class BubbleSort
 end
 sorter = BubbleSort.new
 puts sorter
-  sorter.sort(["d", "b", "a", "c", "z", "t"])
+  sorter.sort(["d", "b", "a", "c"])
