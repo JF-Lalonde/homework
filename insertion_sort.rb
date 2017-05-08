@@ -4,14 +4,14 @@ class InsertionSort
 # Create an empty array for sorted values
   def sort(list)
     (1...list.length).each {|i|
-      index = list[i]
-      sorted_index = i - 1
-      while sorted_index >= 0 && list[sorted_index] > index
-        list[sorted_index + 1] = list[sorted_index]
-        sorted_index = sorted_index - 1
+      sa_index = list[i]
+      ua_index = i - 1
+      while ua_index >= 0 && list[ua_index] > sa_index
+        list[ua_index + 1] = list[ua_index]
+        ua_index = ua_index - 1
       end
 # Update index location
-    list[sorted_index + 1] = index
+    list[ua_index + 1] = sa_index
   }
 # Return sorted array
   puts list.inspect
