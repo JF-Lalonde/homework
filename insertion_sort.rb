@@ -1,7 +1,6 @@
 # JF's Insertion Sorting Algorithm
 class InsertionSort
 # Define method for sorting through a list
-# Create an empty array for sorted values
   def sort(list)
     (1...list.length).each {|i|
       sa_index = list[i]
