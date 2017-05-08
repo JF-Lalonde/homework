@@ -3,7 +3,7 @@ class BubbleSort
   def initialize(sort = [])
     @sort = sort
   end
-  
+
   def sort(array)
     array.length.times do
       (array.length - 1).times do |index|
@@ -22,4 +22,4 @@ class BubbleSort
 end
 sorter = BubbleSort.new
 puts sorter
-  sorter.sort(["d", "b", "a", "c"])
+  sorter.sort(["d", "b", "a", "c", "z", "t"])
