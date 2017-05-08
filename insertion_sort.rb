@@ -10,10 +10,10 @@ class InsertionSort
         list[ua_index + 1] = list[ua_index]
         ua_index = ua_index - 1
       end
-# Update index location
+      # Update index location
     list[ua_index + 1] = sa_index
   }
-# Return sorted array
+  # Return sorted list as array
   puts list.inspect
   end
 end
