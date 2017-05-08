@@ -1,12 +1,9 @@
 # JF's Insertion Sorting Algorithm
 class InsertionSort
-  def initialize(sort = [])
-    @sort = sort
-  end
 # Define method for sorting through a list
 # Create an empty array for sorted values
   def sort(list)
-    for i in (1...list.length)
+    (1...list.length).each {|i|
       index = list[i]
       sorted_index = i - 1
       while sorted_index >= 0 && list[sorted_index] > index
@@ -15,7 +12,7 @@ class InsertionSort
       end
 # Update index location
     list[sorted_index + 1] = index
-    end
+  }
 # Return sorted array
   puts list.inspect
   end
